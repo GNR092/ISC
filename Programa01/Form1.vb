@@ -1,6 +1,8 @@
 ﻿''' <summary>
 ''' Tarea de Taller de programacion ISC 1-A
 ''' Gener de Jesús Can Dzul
+''' Rosaura Guadalupe Escalante castillo
+''' Karla Pamela Ku Pool
 ''' 09-Noviembre-2021
 ''' </summary>
 ''' <remarks></remarks>
