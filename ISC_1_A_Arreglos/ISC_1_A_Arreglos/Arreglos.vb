@@ -106,8 +106,8 @@ Public Class Arreglos
         For i As Integer = 0 To CJugos - 1 Step 1
             AJugos(i, 0) = InputBox("Ingrese el nombre del jugo " & (i + 1), "Jugos")
             cmb_jugos.Items.Add(AJugos(i, 0))
-            AJugos(i, 1) = InputBox($"Ingrese el precio del jugo de {AJugos(i, 0)}", "Jugos")
-            AJugos(i, 2) = InputBox($"Ingrese el stock del jugo de {AJugos(i, 0)} ", "Jugos")
+            AJugos(i, 1) = InputBox("Ingrese el precio del jugo de " + AJugos(i, 0), "Jugos")
+            AJugos(i, 2) = InputBox("Ingrese el stock del jugo de " + AJugos(i, 0), "Jugos")
         Next
         T_Ticks.Enabled = True
 
@@ -152,7 +152,7 @@ Public Class Arreglos
             'Disminuir el stock de ese plato
             AJugos(index, 2) = stock - cant
         Else
-            MessageBox.Show("NO hay suficiente Stock" + Environment.NewLine + $"Disponibles: {stock}", "Jugos", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("NO hay suficiente Stock" + Environment.NewLine + "Disponibles: " + stock, "Jugos", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
     ''' <summary>
